@@ -1,3 +1,4 @@
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 module.exports = {
 	mode: "development",
 
@@ -12,5 +13,9 @@ module.exports = {
 			chunks: "all",
 			minSize: 0
 		}
-	}
+	},
+
+	plugins: [
+		new CleanWebpackPlugin()
+	]
 };

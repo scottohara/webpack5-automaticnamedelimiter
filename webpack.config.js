@@ -6,6 +6,10 @@ module.exports = {
 		b: "./src/b.js"
 	},
 
+	output: {
+		clean: true
+	},
+
 	optimization: {
 		splitChunks: {
 			automaticNameDelimiter: "%",
